@@ -1,12 +1,12 @@
 import init_django_orm  # noqa: F401
 
-from django.db.models import QuerySet
+from django.db import models
 
 
-def main() -> QuerySet:
-class Genre(models.Model)
-name = models.CharFIeld(max_length=255)
-def __str__(self):
+class Genre(models.Model):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
         return self.name
 
 
